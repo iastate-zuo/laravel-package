@@ -1,0 +1,15 @@
+{
+    "name": "webdev/vuetest",
+    "description": "a vue test project",
+    "type": "library",
+    "require": {
+        "laravel/ui": "^2.1"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Zuo, Jacob",
+            "email": "zuo@iastate.edu"
+        }
+    ]
+}
