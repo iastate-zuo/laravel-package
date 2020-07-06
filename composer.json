@@ -1,15 +1,36 @@
 {
-    "name": "webdev/vuetest",
-    "description": "a vue test project",
-    "type": "library",
-    "require": {
-        "laravel/ui": "^2.1"
-    },
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Zuo, Jacob",
-            "email": "zuo@iastate.edu"
-        }
-    ]
+	"name": "webdev/vuetest",
+	"description": "a vue test project",
+	"type": "library",
+	"require": {
+		"php": "^7.2",
+		"illuminate/contracts": "^7.0",
+		"illuminate/support": "^7.0",
+		"illuminate/view": "^7.0",
+		"laravel/ui": "^2.1"
+	},
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Zuo, Jacob",
+			"email": "zuo@iastate.edu"
+		}
+	],
+	"autoload": {
+		"psr-4": {
+			"Webdev\\Vuetest\\": "src"
+		}
+	},
+	"extra": {
+		"laravel": {
+			"providers": [
+				"Webdev\\Vuetest\\VueServiceProvider"
+			]
+		}
+	},
+	"config": {
+		"sort-packages": true
+	},
+	"minimum-stability": "dev",
+	"prefer-stable": true
 }
