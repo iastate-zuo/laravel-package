@@ -9,11 +9,11 @@ class VueComp extends Component
 {
 	public $type;
 
-	public $message
+	public $message;
 
 	public function __construct(
 		$type,
-		$message,
+		$message
 	)
 	{
 		$this->type = $type;

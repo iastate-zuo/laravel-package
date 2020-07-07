@@ -12,7 +12,7 @@ class VueServiceProvider extends ServiceProvider
 	public function register()
 	{
 		// Merge views together
-		$this->loadViewsFrom(__DIR__ . '/resources/views', 'vuetest');
+		$this->loadViewsFrom(__DIR__ . '/../resources/views', 'vuetest');
 	}
 
 	public function boot()
@@ -28,17 +28,17 @@ class VueServiceProvider extends ServiceProvider
 	protected function publishResources()
 	{
 		$this->publishes([
-			__DIR__ . '/resources/views' => resource_path('views/vendor/vuetest'),
+			__DIR__ . '/../resources/views' => resource_path('views/vendor/vuetest'),
 		], 'vuetest');
 
 		$this->publishes([
-			__DIR__ . '/resources/js' => public_path('js/vendor'),
+			__DIR__ . '/../resources/js' => public_path('js/vendor'),
 		], 'vuetest');
 	}
 
 	protected function publishComponents()
 	{
-		$this->loadViewsFrom(__DIR__ . '/resources/views', 'vuetest');
+//		$this->loadViewsFrom(__DIR__ . '/resources/views', 'vuetest');
 
 		Blade::component('vue-comp', VueComp::class);
 	}
