@@ -7,6 +7,7 @@
 		"illuminate/contracts": "^7.0",
 		"illuminate/support": "^7.0",
 		"illuminate/view": "^7.0",
+		"laravel/framework": "^7.19",
 		"laravel/ui": "^2.1"
 	},
 	"license": "MIT",

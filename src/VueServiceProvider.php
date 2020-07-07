@@ -29,10 +29,14 @@ class VueServiceProvider extends ServiceProvider
 		$this->publishes([
 			__DIR__ . '/../resources/views' => resource_path('views/vendor/vuetest'),
 		], 'vuetest');
+
+		$this->publishes([
+			__DIR__ . '/../resources/js' => resource_path('views/vendor/vuetest'),
+		], 'vuetest');
 	}
 
 	protected function publishComponents()
 	{
-
+		$this->loadViewsFrom(__DIR__ . '/resources/views', 'vuetest');
 	}
 }
