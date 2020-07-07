@@ -12,8 +12,8 @@ class VueComp extends Component
 	public $message;
 
 	public function __construct(
-		$type,
-		$message
+		string $type,
+		string $message = ""
 	)
 	{
 		$this->type = $type;
@@ -22,6 +22,9 @@ class VueComp extends Component
 
 	public function render()
 	{
-		return view('vuetest::vuecomp');
+		return view('vuetest::vuecomp', [
+			'type' => $this->type,
+			'message' => $this->message,
+		]);
 	}
 }

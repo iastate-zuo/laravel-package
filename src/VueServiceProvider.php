@@ -38,8 +38,7 @@ class VueServiceProvider extends ServiceProvider
 
 	protected function publishComponents()
 	{
-//		$this->loadViewsFrom(__DIR__ . '/resources/views', 'vuetest');
-
+		// register the <x-vue-comp /> component to the blade template
 		Blade::component('vue-comp', VueComp::class);
 	}
 }
