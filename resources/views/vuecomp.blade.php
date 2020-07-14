@@ -1,5 +1,5 @@
 <div>
-	<script async src="{{ URL::secure_asset('js/vendor/app.js') }}"></script>
 	<p>{{ $type }}: {{ $message }}</p>
+	<script async src="{{ URL::asset('js/vendor/app.js') }}"></script>
 </div>
 

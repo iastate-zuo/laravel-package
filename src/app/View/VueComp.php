@@ -11,10 +11,7 @@ class VueComp extends Component
 
 	public $message;
 
-	public function __construct(
-		string $type,
-		string $message = ""
-	)
+	public function __construct(string $type, string $message = "")
 	{
 		$this->type = $type;
 		$this->message = $message;
